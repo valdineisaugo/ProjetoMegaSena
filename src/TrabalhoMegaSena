@@ -1,0 +1,11 @@
+Trabalho Bimestral - Mega Sena
+Descrição:
+
+Desenvolver um projeto Java para simular um sorteio da mega sena.
+1. O usuário deve informar 06 números válidos (1 ~ 60)
+2. Depois da entrada da aposta, o sistema deve sortear 06 números válidos (1 ~ 60)
+3. Após o sorteio o sistema deverá informar se a aposta foi ganhadora do prêmio.
+
+Trabalho pode ser desenvolvido individualmente ou em duplas.
+Entrega até dia 26/10 - 40% da nota
+
