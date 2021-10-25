@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -5,8 +7,8 @@ public class AppMegaSena {
     public static void main(String[] args) {
         //Conjunto aposta - Array (vetor)
         int[] aposta = new int[6];
-        //Conjunto resultado - Array (vetor)
-        int[] resultado = new int[6];
+        //Conjunto sorteio - Array (vetor)
+        int[] sorteio = new int[6];
         //Scanner para ler dados do teclado
         Scanner teclado = new Scanner(System.in);
         //Parte 01 - Entrada de dados (aposta)
@@ -17,12 +19,19 @@ public class AppMegaSena {
             System.out.println("Digite um número para sua aposta:");
             aposta[i] = teclado.nextInt();
         }
+        JOptionPane.showMessageDialog(null, "Sua aposta foi esta:\n" + Arrays.toString(aposta));
         System.out.println("Sua aposta é esta: ");
         for(int i = 0; i <= 5; i++){
             System.out.println(aposta[i]);
         }
         //Parte 02 - Geração do sorteio (Random)
-        Random sorteio = new Random();
-        int valor = sorteio.nextInt(60);
+        Random random = new Random();
+        for(int i = 0; i<=5; i++){
+            sorteio[i] = random.nextInt(60);
+        }
+        JOptionPane.showMessageDialog(null, "Os números sorteados são estes\n" + Arrays.toString(sorteio));
+
+        //Depois de ler a aposta e realizar sorteio, você deve comparar se os arrays são iguais.
+
     }
 }
